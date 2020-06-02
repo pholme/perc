@@ -1,6 +1,6 @@
 # Node percolation on networks
 
-This is a C implementation with a Python wrapper for [Newman-Ziff's algorithm for node percolation on networks](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.64.016706). It is meant to be fast and readable (at the expense of memory optimization, the original code is better at that).
+This is a C implementation with a Python wrapper for [Newman-Ziff's algorithm for node percolation on networks](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.64.016706). It is meant to be fast, complete and readable (at the expense of memory optimization -- the original code is better at that).
 
 Compile it as:
 `gcc -Ofast -march=native -o perc perc.c -lm`
