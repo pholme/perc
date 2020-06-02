@@ -3,14 +3,14 @@
 // Following the Newman-Ziff algorithm
 
 // Compile by:
-// gcc -Ofast -o perc_newman perc_newman.c -lm
+// gcc -Ofast -march=native-o perc perc.c -lm
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 #include <stdint.h>
 
-#define NAVG 100000 // number of runs for averages
+#define NAVG 10000 // number of runs for averages
 
 // auxiliary macro
 #define SQ(x) (((double) x) * (x))
