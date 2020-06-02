@@ -121,10 +121,12 @@ void perc () {
 		n[i].size = 0;
 	}
 
+	// add occupied nodes in a random order
 	for (i = 0; i < g.n; i++) {
 		root = me = g.order[i];
 		me->size = 1;
 		
+		// go over me's neighbors
 		for (j = 0; j < me->deg; j++) {
 			you = me->nb[j];
 			if (you->size) {
