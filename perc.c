@@ -66,7 +66,7 @@ uint32_t pcg_32_bounded (uint32_t bound) {
 // The file format has to be as follows:
 // The first row has the number of nodes N and edges M
 // The next N rows are: [the degree of the node of line number - 1]
-// The rest of the file list the edges
+// The rest of the file lists the edges
 
 void read_data () {
 	unsigned int i, j, k, m;
