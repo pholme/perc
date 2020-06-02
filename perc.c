@@ -92,7 +92,7 @@ void read_data () {
 
 	for (i = 0; i < m; i++) {
 		if (2 != scanf("%u %u\n", &j, &k)) {
-			fprintf(stderr, "reading error (1)\n");
+			fprintf(stderr, "reading error (3)\n");
 			exit(1);
 		}
 		n[k].nb[n[k].deg++] = n + j;
