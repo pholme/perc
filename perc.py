@@ -1,4 +1,8 @@
-# wrapper for the percolation C code
+# Python wrapper for the percolation C code
+# this example takes an input file -- an edge list representation
+# of a network, then calculates the expected size of the largest connected
+# component, given the percolation probability, then prints this to a PDF
+# file
 
 import networkx as nx
 from sys import argv
@@ -10,8 +14,8 @@ import matplotlib.pyplot as plt
 
 if __name__ == "__main__":
 
-	if len(argv) != 2:
-		print('usage: python3 perc.py [edge list file]')
+	if len(argv) != 3:
+		print('usage: python3 perc.py [edge list file] [output PDF file]')
 		exit(1)
 
 	G = nx.convert_node_labels_to_integers(nx.read_edgelist(argv[1]))
@@ -44,6 +48,6 @@ if __name__ == "__main__":
 	plt.xlabel('Percolation probability')
 	plt.ylabel('Size of largest cluster')
 	plt.errorbar(x,y,yerr)
-	plt.show()
+	plt.savefig(argv[2])
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
