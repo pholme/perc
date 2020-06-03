@@ -12,7 +12,7 @@ Run it as:
 
 The output is an (standard error) errorbar plot of the size of the largest connected component as a function of the percolation probability. It is printed to a PDF file whose name should be given on the command line. If you are interested in the response to random deletion of nodes, you have to mirror the x-axis (the fraction of removed nodes is one minus the percolation probability).
 
-There is an equivalent example how to run the C program from R. That one could be run as a R script as:
+There is an equivalent example how to run the C program from R. It could be run as a R script as:
 
 `Rscript perc.R iceland.lnk iceland.pdf`
 
