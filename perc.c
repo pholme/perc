@@ -3,7 +3,7 @@
 // Following the Newman-Ziff algorithm
 
 // Compile by:
-// gcc -Ofast -march=native-o perc perc.c -lm
+// gcc -Ofast -march=native -o perc perc.c -lm
 
 #include <stdio.h>
 #include <stdlib.h>
