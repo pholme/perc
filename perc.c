@@ -173,7 +173,7 @@ int main (int argc, char *argv[]) {
 	for (i = 0; i < g.n; i++) {
 		g.s1[i] /= NAVG;
 		g.s2[i] /= NAVG;
-		printf("%g %g %g\n", (i + 1) / (double) g.n, g.s1[i], sqrt((g.s2[i] - SQ(g.s1[i])) / (NAVG - 1.0)));
+		printf("%g %g %g\n", (i + 1.0) / g.n, g.s1[i], sqrt((g.s2[i] - SQ(g.s1[i])) / (NAVG - 1.0)));
 	}
 
 	// cleaning up
