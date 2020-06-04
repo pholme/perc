@@ -9,7 +9,6 @@ library(numbers)
 library(ggplot2)
 
 # reading file name
-
 argv = commandArgs(trailingOnly = TRUE)
 
 if (length(argv) != 2) {
@@ -17,7 +16,6 @@ if (length(argv) != 2) {
 }
 
 # assembling the network in the format of the C code
-
 g <- read_graph(argv[1], format = c("edgelist"))
 
 nwk <- vector()
