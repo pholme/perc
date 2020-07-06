@@ -71,7 +71,7 @@ uint32_t pcg_32_bounded (uint32_t bound) {
 void read_data () {
 	unsigned int i, j, k, m;
 
-	if (2 != scanf("%u %u\n", &g.n, &m)) {
+	if (2 != scanf("%u %u", &g.n, &m)) {
 		fprintf(stderr, "reading error (1)\n");
 		exit(1);
 	}
@@ -82,7 +82,7 @@ void read_data () {
 	g.s2 = calloc(g.n, sizeof(double));
 
 	for (i = 0; i < g.n; i++) {
-		if (1 != scanf("%u\n", &j)) {
+		if (1 != scanf("%u", &j)) {
 			fprintf(stderr, "reading error (2)\n");
 			exit(1);
 		}
@@ -91,7 +91,7 @@ void read_data () {
 	}
 
 	for (i = 0; i < m; i++) {
-		if (2 != scanf("%u %u\n", &j, &k)) {
+		if (2 != scanf("%u %u", &j, &k)) {
 			fprintf(stderr, "reading error (3)\n");
 			exit(1);
 		}
